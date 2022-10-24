@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Reference: 
+    https://codepen.io/knaman2609/pen/Zbyjvv
+    https://pixabay.com/illustrations/donald-trump-america-president-5103361/ 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color: #54AFE4;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            text-align: right;
+            width: 39%;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #C3DEF3;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: #79A9CE;
+        }
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">Sakamoto</span>
+                <span class="last-name">Kamito</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">Twitter: </span>
+                <span class="email-val"><a href="https://twitter.com/kamito_otaku"target="_blank">https://twitter.com/kamito_otaku</a>></span>
+                <br>
+                <span class="phone">YoutubeChannel: </span>
+                <span class="phone-val"><a href="https://www.youtube.com/channel/UCgYCMluaLpERsyNXlPOvBtA"target="_blank">https://www.youtube.com/channel/UCgYCMluaLpERsyNXlPOvBtA</a></span>
+            </div>
+
+            <div>
+                <img src="Kamito_-_Portrait.webp" width="60%">
+            </div>
+
+            <div class="about">
+                <span class="position">Front-End Developer </span>
+                <span class="desc">
+                    Kamito (かみと) is a male independent Japanese Virtual YouTuber and a former professional gamer.
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Personality</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+
+                            <div class="text">Kamito is a shy otaku, who can be a bit awkward upon meeting new people. However, once he warms up to someone, he becomes very playful and will constantly joke around with them. While he often plays the role of the tsukkomi with many of the people he collaborates with, he is also known to be quite the boke at times as well.</div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Background</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+
+                            <div class="text">Known for his outstanding Apex Legends skills, Kamito was a part of the Japanese professional e-sports team, team Creatives, but has since left and started streaming independently mostly on Twitch, then on YouTube. He went on like this for a while up until the 11 April 2021, when he formally debuted as a VTuber with a notable amount of people watching live, peaking at around 14,000 viewers simultaneously watching the stream. Kamito created his YouTube channel on 25 July 2017.</div>
+
+                        </div>
+
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+
+                            <div class="text">Kamito's streaming career skyrocketed after getting matched with NIJISANJI's Kanae in a ranked Apex game. Despite Kamito's loss of the ability to properly function due to being in close proximity of his favorite vtuber, they won the match with Kamito making enough of an impression for Kanae to send him a friends request afterwards. They collaborated multiple times after that, with Kamito eventually being invited to join Kanae's team in the first Crazy Raccoon Cup. Since then, Kamito has participated in many amateur Apex tournaments, both as a player and as a coach. On 14 May 2021, Kamito tweeted out a letter of gratitude to Kanae, thanking him for everything his help in becoming a full time streamer.</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">Fans</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">おたくのおたく</div>
+                        <div class="text">Kamito's Fans are called "おたくのおたく" (Otaku of the Otaku). This name came about because Kamito is a big fan of VTubers, thus getting nicknamed as an otaku. And as the fans are big fans of Kamito, they too are called Otaku, forming the name "Otaku no otaku".</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Skilled Games</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                Apex Legends
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input id="ck1" type="checkbox" checked />
+
+                            <label for="ck1"></label>
+                            <input id="ck2" type="checkbox" checked />
+
+                            <label for="ck2"></label>
+                            <input id="ck3" type="checkbox" checked/>
+
+                            <label for="ck3"></label>
+                            <input id="ck4" type="checkbox" checked/>
+                            <label for="ck4"></label>
+                            <input id="ck5" type="checkbox" checked/>
+                            <label for="ck5"></label>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            Valorant</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" checked/>
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" checked/>
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" />
+                        <label for="ck5"></label>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        shooting game, Playing games with Hinano(a Vutuber).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
